@@ -2309,7 +2309,7 @@
     color: #110E38;
   }
   .logo__image {
-    max-height: 50px;
+    max-height: 150px;
   }
   .main-nav {
     display: flex;
@@ -4168,7 +4168,7 @@
   }
   .c-testimonial-card__content {
     width: 100%;
-    padding: 32px;
+    padding: 42px;
     border-radius: 16px;
     color: #fff;
     background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
@@ -4214,7 +4214,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 150%;
     border-radius: 50%;
     object-fit: cover;
   }
