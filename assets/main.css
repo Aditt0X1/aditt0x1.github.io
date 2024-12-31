@@ -5,6 +5,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
   }
   .clearfix::after,
   .clearfix ::before {
@@ -38,6 +39,7 @@
    */
   body {
     margin: 0;
+    background-color: #111826 !important;
   }
   /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -2192,7 +2194,7 @@
     margin-top: 44px;
     padding: 96px 0 60px;
     overflow: hidden;
-    background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+    background: linear-gradient(90deg, #38CC53 0%, #003687 167%);
   }
   .footer .social {
     margin-bottom: 40px;
@@ -2215,7 +2217,7 @@
   }
   .footer .social .social__link:hover {
     transform: scale(0.9);
-    color: #1495a7;
+    color: #38CC53;
   }
   .footer .social .social__link:hover::after {
     content: none;
@@ -2473,9 +2475,10 @@
     line-height: 1;
     font-weight: 600;
     cursor: pointer;
+    color: #38CC53;
   }
   .nav__list .nav__item .nav__link:hover {
-    color: #110E38;
+    color: #38CC53;
   }
   .nav__list .nav__item .nav__link.active-link::after {
     content: "";
@@ -2487,7 +2490,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #1495a7;
+    background-color: #38CC53;
   }
   .nav__list .nav__item.dropdown {
     position: relative;
@@ -2671,6 +2674,7 @@
     margin: 0;
     font-size: 32px;
     line-height: 1;
+    color: #009926;
   }
   .section__info .section__head .section__link {
     font-size: 16px;
@@ -2678,12 +2682,13 @@
     line-height: 1;
     white-space: nowrap;
     will-change: transform;
+    color: white;
   }
   .section__info .section__head .section__link:hover {
-    color: #110E38;
+    color: #38CC53;
   }
   .section__info .section__head .section__link:hover i {
-    transform: translateX(2px);
+    transform: translateX(4px);
   }
   .section__info .section__head .section__link i {
     width: 18px;
@@ -2694,13 +2699,14 @@
     border-radius: 50%;
     text-align: center;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0005);
-    background: #fff;
+    background: #38CC53;
     transition: 0.2s;
   }
   .section__info .section__description {
     max-width: 480px;
     line-height: 1.6;
     margin: 32px 0 0;
+    color: white;
   }
   .section__info .section__description p {
     margin: 0;
@@ -2743,6 +2749,7 @@
     padding: 0 10px;
     font-size: 21px;
     line-height: 1;
+    color: #38CC53;
   }
   .social .social__link:hover {
     color: #fff;
@@ -3283,7 +3290,7 @@
     padding: 28px;
     margin-top: -20px;
     border-radius: 16px 16px 0 0;
-    background: #fff;
+    background: #38CC53;
   }
   .c-blog-card__tags-box {
     display: flex;
@@ -3410,7 +3417,7 @@
   }
   .c-button--primary {
     color: #fff;
-    background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+    background: linear-gradient(90deg, #38CC53 0%, #003687 167%);
   }
   .c-button--primary:hover {
     color: #fff !important;
@@ -3463,10 +3470,12 @@
     display: inline-block;
     margin-bottom: 20px;
     font-size: 58px;
+    color: #38CC53;
   }
   .c-contact-form__contact-description {
     font-size: 20px;
     font-weight: 600;
+    color: #38CC53;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -3622,7 +3631,7 @@
   .c-hero__title {
     margin-bottom: 20px;
     font-size: 58px;
-    color: #110E38;
+    color: #38CC53;
   }
 }
 @media only screen and (max-width: 1130px) {
@@ -3646,7 +3655,7 @@
     margin-bottom: 0;
     font-size: 18px;
     line-height: 1.6;
-    color: #110E38;
+    color: #38CC53;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -3677,7 +3686,7 @@
     font-size: 14px;
     border-radius: 50%;
     will-change: transform;
-    background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+    background: linear-gradient(90deg, #38CC53 0%, gold 167%);
     transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   .c-hero__btn .works-button .button-arrow {
@@ -3751,6 +3760,7 @@
     margin-bottom: 24px;
     font-size: 58px;
     line-height: 1.2;
+    color: #fff;
   }
   .c-subscribe__subtitle {
     margin: 0 auto;
@@ -3758,6 +3768,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
+    color: #38CC53;
   }
   .c-subscribe__form {
     display: flex;
@@ -4115,7 +4126,7 @@
     min-height: 280px;
     border-radius: 16px;
     transform: translate(0);
-    box-shadow: 0px 0px 30px rgba(20, 149, 167, 0.1);
+    box-shadow: 0px 0px 30px rgba(50, 218, 101, 0.1);
     overflow: hidden;
   }
 }
@@ -4171,7 +4182,7 @@
     padding: 42px;
     border-radius: 16px;
     color: #fff;
-    background: linear-gradient(90deg, #1495a7 0%, #003687 167%);
+    background: linear-gradient(90deg, #38CC53 0%, #003687 167%);
   }
   .c-testimonial-card__client-meta {
     display: flex;
