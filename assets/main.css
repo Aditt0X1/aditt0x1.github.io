@@ -40,6 +40,7 @@
   body {
     margin: 0;
     background-color: #111826 !important;
+    color: floralwhite !important
   }
   /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -3470,7 +3471,7 @@
     display: inline-block;
     margin-bottom: 20px;
     font-size: 58px;
-    color: #38CC53;
+    color: #fffffffa;
   }
   .c-contact-form__contact-description {
     font-size: 20px;
@@ -3851,6 +3852,7 @@
     margin: 0;
     font-size: 58px;
     line-height: 1.12;
+    color: floralwhite;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -3868,6 +3870,7 @@
     margin: 30px auto 0;
     max-width: 560px;
     line-height: 1.6;
+    color: floralwhite;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -4096,7 +4099,7 @@
     transition: all 0.4s ease 0s;
     opacity: 0;
     visibility: hidden;
-    background: linear-gradient(360deg, #1495a7 0%, rgba(0, 54, 135, 0.3) 120.95%);
+    background: linear-gradient(360deg, #38CC53 0%, rgba(0, 54, 135, 0.3) 120.95%);
   }
   .c-project-card__image img {
     position: absolute;
