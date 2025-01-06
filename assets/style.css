@@ -1,0 +1,223 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #004663;
+    color: #c7d5e0;
+    margin: 0;
+    padding: 20px;
+}
+/* Стили модального окна */
+/* Стили модального окна */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+}
+
+.modal-content {
+    max-width: 90%; /* Максимальная ширина изображения */
+    max-height: 90%; /* Максимальная высота изображения */
+}
+
+
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Изменение цвета кнопки закрытия при наведении */
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Увеличиваем только конкретное изображение при наведении */
+.enlarge-on-hover {
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    z-index: 1;
+    max-width: 100%; /* Ограничиваем ширину изображений по контейнеру */
+    height: auto; /* Сохраняем пропорции изображения */
+    object-fit: contain; /* Обеспечиваем, что изображение будет масштабироваться внутри контейнера без искажений */
+}
+
+
+/* Контейнер для временной шкалы */
+.timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Центральная вертикальная линия временной шкалы */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background-color: #38CC53;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* Элементы временной шкалы */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-item.left.visible {
+    transform: translateX(-6px);
+}
+
+.timeline-item.right.visible {
+    transform: translateX(6px);
+}
+
+/* Содержимое временной шкалы */
+.timeline-content {
+    background-color: rgba(2, 57, 77, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(19, 180, 86, 0.7), 0 0 50px rgba(8, 129, 210, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+/* Уменьшение тени и небольшое сжатие при наведении */
+.timeline-content:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(0.98);
+    z-index: 1;
+}
+
+/* Стили аватара */
+.timeline-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid #38CC53;
+}
+
+/* Дата на временной шкале */
+.timeline-date {
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1b2838;
+    color: #66c0f4;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    z-index: 2; /* Устанавливаем более высокий z-index, чтобы дата отображалась поверх содержимого */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок временной шкалы */
+.timeline-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Описание временной шкалы */
+.timeline-description {
+    font-size: 15px;
+    color: #d4e0e6;
+    line-height: 1.6;
+}
+
+/* Стрелка, соединяющая элементы с центральной линией */
+.timeline-item.left::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -12px;
+    width: 12px;
+    height: 12px;
+    background-color: #38CC53;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.timeline-item.right::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -12px;
+    width: 12px;
+    height: 12px;
+    background-color: #38CC53;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .timeline-item.right {
+        left: 0;
+    }
+
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-item.left::before,
+    .timeline-item.right::before {
+        left: 20px;
+        right: auto;
+    }
+
+    .timeline-date {
+        left: 20px;
+        transform: translateX(0);
+    }
+    
+}
