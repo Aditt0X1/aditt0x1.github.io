@@ -31,6 +31,7 @@
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="/assets/ctf.css">
 </head>
 
 <body>
@@ -165,33 +166,134 @@
   </div>
 </div>
 <!--bookshop-live end-->
+<!--My Code Starts from Here-->
 
-  <div class="page animate">
-    <p>In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et potionibus, minorem voluptatem.</p>
+<div class="ctf-zone">
+  <h2>Step Into My CTF Arena</h2>
+    <p>Welcome to my CTF Zone,this is where I tackle puzzles, break codes, and outsmart systems in the adrenaline-fueled world of Capture The Flag. From reverse engineering binaries to uncovering hidden flags, every challenge is a step toward mastering the art of cybersecurity. Dive in to explore my write-ups, achievements, and the tools I’ve used to break barriers in the cyber arena. Let’s capture some flags together! 💻🚩  </p>
 
-<p><img src="/images/image-example-3.jpg" alt="Palm trees" width="1200" height="900" /></p>
-
-<p>Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit, quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur propter voluptatem. Scientiam pollicentur, quam non erat mirum sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur rectissime mihi videris et ad consuetudinem nostrae orationis.</p>
-
-<p><img src="/images/image-example-4.jpg" alt="Sea" width="1200" height="900" /></p>
-
-<p>Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne clamant sapienti plus semper adesse quod velit quam quod nolit? Quae quidem sapientes sequuntur duce natura tamquam videntes; Quod enim dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui proposito sit conservatio sui, necesse est huic partes quoque sui caras suo genere laudabiles servari.</p>
-
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="tryhackme">TryHackMe</button>
+    <button class="filter-btn" data-filter="hackthebox">HackTheBox</button>
+    <button class="filter-btn" data-filter="ctf">CTF Competitions</button>
   </div>
 
-  
-  <div class="project__navigation animate">
-    <a class="project__prev" href="/project/antelope-anyon">
-      <div class="project__box">
-        <span class="project__nav__info">Next Project</span>
-        <h2 class="project__nav__title">Antelope Canyon<i class="ion ion-md-arrow-round-forward arrow-right"></i></h2>
+  <div class="ctf-grid">
+    <!-- TryHackMe Example -->
+    <div class="ctf-card" data-platform="tryhackme">
+      <div class="ctf-logo">
+        <img src="https://simpleicons.org/icons/tryhackme.svg" alt="TryHackMe Logo">
       </div>
-    </a>
-  </div>
+      <h3>TryHackMe - Beginner Path</h3>
+      <p>Completed: 65 rooms</p>
+      <p>Points: 10947</p>
+      <p>Skills: Red Teaming, Penetration Testing, Fundementals </p>
+      <a href="https://tryhackme.com/r/p/adittokhandaker" class="ctf-link">View Profile</a>
+    </div>
   
+    <!-- HackTheBox Example -->
+    <div class="ctf-card" data-platform="hackthebox">
+      <div class="ctf-logo">
+        <img src="https://simpleicons.org/icons/hackthebox.svg" alt="HackTheBox Logo">
+      </div>
+      <h3>HackTheBox - Starting Point</h3>
+      <p>Completed: 4 machines</p>
+      <p>Skills: Privilege Escalation, Network Enumeration</p>
+      <a href="https://app.hackthebox.com/profile/2092608" class="ctf-link">View Profile</a>
+    </div>
 
+    <div class="ctf-card" data-platform="picoctf">
+      <div class="ctf-logo">
+        <img src="https://avatars.githubusercontent.com/u/5315773?s=280&v=4" alt="HackTheBox Logo">
+      </div>
+      <h3>PicoCTF</h3>
+      <p>Secured Points: 3330</p>
+      <p>Skills: Web Exploitation, Forensics, Reverse Engineering, Cryptography</p>
+      <a href="https://play.picoctf.org/users/aditt0" class="ctf-link">View Profile</a>
+    </div>
+  
+  
+    <!-- CTF Competition Example 1 -->
+    <div class="ctf-card" data-platform="ctf">
+      <div class="ctf-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuljQrlgCFAZ8TaEg_XkRT0reorxleuAbnvw&s" alt="CTF Logo">
+      </div>
+      <h3>RIoT Center Flag Hunt 2022</h3>
+      <p>Rank: Top 5%</p>
+      <p>Skills: Cryptography, Reverse Engineering</p>
+      <a href="#" class="ctf-link">Write-up</a>
+    </div>
+  
+    <!-- CTF Competition Example 2 -->
+    <div class="ctf-card" data-platform="ctf">
+      <div class="ctf-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaVz0odWZW8Km1TOtx9jUIbQkUPQgg5iVo1w&s" alt="CTF Logo">
+      </div>
+       <h3>Flag Hunt 2023</h3>
+       <p> No Position </p>
+      <p>Skills:Web Exploitation, Cryptography, Reverse Engineering, Forensics</p>
+      <a href="#" class="ctf-link">Write-up</a>
+    </div>
+
+    <div class="ctf-card" data-platform="picoctf">
+      <div class="ctf-logo">
+        <img src="https://ctflearn.com/static/img/sticker.png" alt="HackTheBox Logo">
+      </div>
+      <h3>CTFLEARN</h3>
+      <p>Secured Points: 450</p>
+      <p>Skills: Web Exploitation, Forensics, OSINT, Stegnography</p>
+      <a href="https://ctflearn.com/user/D4rk_P1rat3" class="ctf-link">View Profile</a>
+    </div>
+
+  
+    <!-- CTF Competition Example 3 -->
+    <div class="ctf-card" data-platform="ctf">
+      <div class="ctf-logo">
+        <img src="https://pbs.twimg.com/media/F0di2WxakAMnyhk.jpg" alt="CTF Logo">
+      </div>
+      <h3>CTF Competition - Maze In ANTARJAL 2023</h3>
+      <p>Rank: 57th </p>
+      <p>Skills: Binary Exploitation, Cryptography</p>
+      <a href="#" class="ctf-link">Write-up</a>
+    </div>
+  </div>
+
+  
+  <!-- Skills Progress -->
+  <div class="skills-progress">
+    <h2>Skills Progress</h2>
+    <div class="progress-container">
+      <div class="radial-progress" data-progress="70">
+        <span>Web</span>
+      </div>
+      <div class="radial-progress" data-progress="50">
+        <span>Forensics</span>
+      </div>
+      <div class="radial-progress" data-progress="30">
+        <span>Cryptography</span>
+      </div>
+      <div class="radial-progress" data-progress="15">
+        <span>Reverse Engineering</span>
+      </div>
+      <div class="radial-progress" data-progress="5">
+        <span>Binary Exploitation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Future Goals -->
+  <div class="future-goals">
+    <h2>My Thought</h2>
+    <p>In CTFs, it’s not just about finding the flag—it’s about the journey of discovery, the thrill of solving puzzles, and the satisfaction of outsmarting the system. Every challenge is an opportunity to grow, and every failure is a lesson in disguise.</br> 
+      Can You Solve This?</br>
+      Flag: ZmxhZ3t3ZWxjb21lX3RvX215X2N0Zl96b25lfQ==</br>
+      Hint: It’s encoded in Base64. Good luck!</p>
+  </div>
+</div>  
+  
 </div>
-
+<!--My Code Starts from Here-->
 <!--bookshop-live meta(version="3.9.0" baseurl="" title="Vonge") -->
 <!--bookshop-live name(newsletter/newsletter.jekyll.html) params(newsletter_title=site.data.newsletter.newsletter_title
   newsletter_description=site.data.newsletter.newsletter_description
@@ -309,5 +411,6 @@
 
     <script src="/js/scripts.js"></script>
     <script src="/js/common.js"></script>
+    <script src="/js/ctf.js"></script>
 </body>
 </html>
