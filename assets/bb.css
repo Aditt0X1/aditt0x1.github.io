@@ -1,0 +1,232 @@
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .ir {
+    display: block;
+    overflow: visible;
+    padding: 0 0 100%;
+    position: relative;
+    height: 0;
+    width: 100%;
+  }
+  
+  .ir > * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  html {
+    font-size: .625em; /* 10px for rems */
+  }
+  
+  .soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0 auto;
+    padding: 4.8rem;
+    text-align: center;
+    width: 110rem;
+    max-width: 100%;
+  }
+  
+  .soc li {
+    display: inline-block;
+    margin: 1.2rem;
+  }
+  
+  .soc a, .soc svg {
+    display: block;
+  }
+  
+  .soc a {
+    height: 9.6rem;
+    width: 9.6rem;
+  }
+  
+  .social-icon-hover {
+    border-radius: 100%;
+    fill: var(--background);
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out;
+  }
+  
+  .icon-1 { fill: hsl(0, 0%, 100%); }
+  .icon-1:hover { background: hsl(12, 13%, 92%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-2 { fill: hsl(24, 70%, 50%); }
+  .icon-2:hover { background: hsl(24, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-3 { fill: hsl(36, 70%, 50%); }
+  .icon-3:hover { background: hsl(36, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-4 { fill: hsl(48, 70%, 50%); }
+  .icon-4:hover { background: hsl(48, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-5 { fill: hsl(60, 70%, 50%); }
+  .icon-5:hover { background: hsl(60, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-6 { fill: hsl(72, 70%, 50%); }
+  .icon-6:hover { background: hsl(72, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-7 { fill: hsl(84, 70%, 50%); }
+  .icon-7:hover { background: hsl(84, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-8 { fill: hsl(96, 70%, 50%); }
+  .icon-8:hover { background: hsl(96, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-9 { fill: hsl(108, 70%, 50%); }
+  .icon-9:hover { background: hsl(108, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-10 { fill: hsl(120, 70%, 50%); }
+  .icon-10:hover { background: hsl(120, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-11 { fill: hsl(132, 70%, 50%); }
+  .icon-11:hover { background: hsl(132, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-12 { fill: hsl(144, 70%, 50%); }
+  .icon-12:hover { background: hsl(144, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-13 { fill: hsl(156, 70%, 50%); }
+  .icon-13:hover { background: hsl(156, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-14 { fill: hsl(168, 70%, 50%); }
+  .icon-14:hover { background: hsl(168, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-15 { fill: hsl(180, 70%, 50%); }
+  .icon-15:hover { background: hsl(180, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-16 { fill: hsl(192, 70%, 50%); }
+  .icon-16:hover { background: hsl(192, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-17 { fill: hsl(204, 70%, 50%); }
+  .icon-17:hover { background: hsl(204, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-18 { fill: hsl(216, 70%, 50%); }
+  .icon-18:hover { background: hsl(216, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-19 { fill: hsl(228, 70%, 50%); }
+  .icon-19:hover { background: hsl(228, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-20 { fill: hsl(240, 70%, 50%); }
+  .icon-20:hover { background: hsl(240, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-21 { fill: hsl(252, 70%, 50%); }
+  .icon-21:hover { background: hsl(252, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-22 { fill: hsl(264, 70%, 50%); }
+  .icon-22:hover { background: hsl(264, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-23 { fill: hsl(276, 70%, 50%); }
+  .icon-23:hover { background: hsl(276, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-24 { fill: hsl(288, 70%, 50%); }
+  .icon-24:hover { background: hsl(288, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-25 { fill: hsl(300, 70%, 50%); }
+  .icon-25:hover { background: hsl(300, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-26 { fill: hsl(312, 70%, 50%); }
+  .icon-26:hover { background: hsl(312, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-27 { fill: hsl(324, 70%, 50%); }
+  .icon-27:hover { background: hsl(324, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-28 { fill: hsl(336, 70%, 50%); }
+  .icon-28:hover { background: hsl(336, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-29 { fill: hsl(348, 70%, 50%); }
+  .icon-29:hover { background: hsl(348, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-30 { fill: hsl(360, 70%, 50%); }
+  .icon-30:hover { background: hsl(360, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-31 { fill: hsl(372, 70%, 50%); }
+  .icon-31:hover { background: hsl(372, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+  
+  .icon-32 { fill: hsl(384, 70%, 50%); }
+  .icon-32:hover { background: hsl(384, 70%, 50%); border-radius: 100%; fill: var(--background); transform: scale(1.25); transition: background-color .5s, transform .5s ease-out; }
+
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.logos img {
+    height: 200px; /* Ensures consistent height for all logos */
+    object-fit: contain; /* Ensures no distortion of the image */
+    width: 500px; /* Adjust the size of the logos */
+    object-fit: contain; /* Ensure the logo fits within the container */
+    vertical-align: middle; /* Align logos vertically */
+    top: 30%;
+}
+
+.progress-tracker {
+  background: linear-gradient(90deg, #38CC53 0%, #003687 167%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 200px;
+}
+
+.progress-tracker h3 {
+  font-size: 24px;
+  color: #d3d3d3;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.progress-tracker p {
+  font-size: 18px;
+  color: #f0f0f0;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.progress-tracker p:last-child {
+  color: #1495a7;
+  font-weight: 500;
+}
+
+.progress-tracker p::before {
+  content: "✔️";
+  margin-right: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  background-color: #1495a7;
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.progress-bar::after {
+  content: attr(data-progress);
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  margin-top: 5px;
+}
