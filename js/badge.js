@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const badgeDescriptions = {
-        "Badge 1": "Information Security Assessment and Penetration Testing(VAPT)",
+        "Badge 1": "Information Security Assessment and Penetration Testing(VAPT) </br> Certificate ID : SAPT00013",
         "Badge 2": "Foundation Level Threat intelligence Analyst",
         "Badge 3": "API Penetration Testing - APISec University",
         "Badge 4": "Bash Scripting From Codeacademy",
