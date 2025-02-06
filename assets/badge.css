@@ -1,0 +1,326 @@
+/* 🌟 General Body Styling */
+body {
+    background: black;
+    color: #38CC53;
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+/* 🌟 Terminal Styling */
+.terminal {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+    margin-left: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgb(16, 151, 61);
+    box-shadow: 0px 0px 10px #38CC53;
+    
+}
+
+.output {
+    min-height: 50px;
+    text-align: left;
+    padding: 10px;
+}
+
+#terminal-input {
+    width: 100%;
+    background: black;
+    color: rgb(0, 255, 60);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+/* 🌟 Hexagonal Badge Container */
+.hex-container {
+    display: flex;  /* Keep it flexible but hidden */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin-top: 20px;
+    margin-left: 270px;
+    margin-bottom: 100px;
+}
+
+
+/* 🌟 Your Original Hexagon Design */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: -20px 0;
+}
+
+.test-shape {
+    width: 150px;
+    height: 150px;
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin: 10px;
+    font-weight: bold;
+    transition: .7s;
+    opacity: 0;
+    transform: scale(0.5) translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.test-shape:hover {
+    background: red;
+    transform: rotateY(-180deg);
+    transition: .7s;
+}
+
+/* 🌟 Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(0, 255, 255);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup a {
+    display: block;
+    color: rgb(0, 255, 76);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-badges {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* When badge appears, apply advanced effects */
+.badge-appear {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    box-shadow: 0px 0px 15px rgba(0, 255, 76, 0.8);
+}
+
+/* Add a futuristic neon glow effect */
+.badge-appear:hover {
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 1);
+    transform: scale(1.1) rotateY(15deg);
+}
+
+
+
+/* Just for fun */
+.bug {
+    margin-left: -100px;
+    transform: rotate(-360deg);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    animation: bee 5s linear infinite both;
+    
+  }
+  .bee1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fffb00;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 6;
+  }
+  .bee2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 18px 20px 18px;
+    background-color: #fffb00;
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    z-index: 4;
+  
+  }
+  .black {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px 18px 20px 18px;
+    background-color: black;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    z-index: 5;
+  
+  }
+  .eye {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 6;
+    animation: eye 0.5s 2.2s 2 linear;
+  }
+  .wing {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #BBDEFB;
+    position: absolute;
+    right: 10px;
+    top: -15px;
+    z-index: 2;
+    border: 0.5px solid #90CAF9;
+    animation: wings 1s linear infinite;
+  }
+  .wing2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #BBDEFB;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    border: 0.5px solid #90CAF9;
+    z-index: 1;
+    animation: wings2 1s linear infinite;
+  }
+  @keyframes bee {
+    0% { 
+      transform: rotate(0deg);
+      margin-left: -100px;
+      margin-top: 50px;}
+    10% {
+      transform: rotate(-10deg);
+      margin-left: 100px;
+      margin-top: 80px;
+    }
+    20% { 
+      transform: rotate(-20deg);
+      margin-left: 200px;
+      margin-top: 80px;
+    }
+    50% {
+      margin-left: 500px;
+      margin-top: 50px;
+      transform: rotate(-360deg);
+    }
+   60% {
+       margin-left: 600px;
+       margin-top: 60px;
+       transform: rotate(-360deg);
+    }
+    100% { 
+       margin-left: 900px;
+       margin-top: 80px;
+    }
+  }
+  @keyframes wings {
+    20% {
+      right: 12px;
+    }
+    30% {
+      right: 8px;
+    }
+    40% {
+      right: 12px;
+    }
+    50% {
+      right: 8px;
+    } 
+    60% {
+      right: 12px;
+    }
+    70% {
+      right: 8px;
+    }
+    80% {
+      right: 12px;
+    }
+    90% {
+      right: 8px;
+    }
+  }
+  @keyframes wings2 {  
+    20% {
+      right: -2px;
+    }
+    30% {
+      right: 2px;
+    }
+    40% {
+      right: -2px;
+    }
+    50% {
+      right: 2px;
+    } 
+    60% {
+      right: -2px;
+    }
+    70% {
+      right: 2px;
+    }
+    80% {
+      right: -2px;
+    }
+    90% {
+      right: 2px;
+    }
+  }
+  @keyframes eye {
+    0% {  width: 5px;
+    height: 5px;}
+    10% {
+    width: 0;
+    height: 0;
+    }
+    40% {
+    width: 5px;
+    height: 5px;
+    }
+    50% {
+    width: 5px;
+    height: 5px;
+    }
+    100% {  width: 5px;
+    height: 5px;}
+  }
